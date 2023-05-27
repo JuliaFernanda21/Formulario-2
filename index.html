@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+       <fieldset>
+          <legend>Validação</legend>
+          <label for="login">Login</label> <input type="text" name="login" id="login" placeholder="Digite o login" required > <br>
+          <label for="senha">Senha</label> <input type="password" name="senha" id="senha" placeholder="Digite a senha" required> <br>
+          <label for="email">Email</label> <input type="email" name="emai" id="email"placeholder="Digite seu email" required> <br>
+          <label for="cep">Cep  </label>   <input type="number" name="cep"  id="cep" placeholder="Digite seu Cep" value="03020123" readonly> <br>
+          <label for="data">Data-Horario</label>   <input type="datetime-local" name="data" id="data" ><br>
+          <input type="hidden" name="cidade" value="São Paulo">
+          <input type="submit"> 
+       </fieldset>
+
+       <fieldset>
+        <legend>Prova</legend>
+        <p>Enunciado</p>
+        (a)<input type="radio" name="value=resposta a"><br>
+        (b)<input type="radio" name="value=resposta b"><br>
+        (c)<input type="radio" name="value=resposta c"><br>
+       </fieldset>
+    </form>
+</body>
+</html>
